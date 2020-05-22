@@ -25,4 +25,4 @@ class ScrollingScreen:
     def __dealloc__(self):
         self.f.write(_clearLine)
 
-sys.stderr = ScrollingScreen(sys.stderr.buffer.raw)
+sys.stderr = ScrollingScreen(sys.stderr)
